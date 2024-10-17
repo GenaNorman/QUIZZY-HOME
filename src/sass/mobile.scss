@@ -1,0 +1,101 @@
+@media (max-width: 768px) {
+  /* Styles for devices with a width of 768px or less */
+  .btn_mobile{
+    display: none;
+  }
+  body {
+    width: 100%;
+    // background-color: blue;
+  }
+  .translate {
+    transition: all 0.5s ease-out;
+    position: absolute;
+    top: 3.8rem;
+    left: -2rem;
+  }
+  .header {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 95%;
+    &__nav {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: absolute;
+      transition: all 0.5s ease-out;
+      top: 4rem;
+      left: -8.5rem;
+      z-index: 10;
+
+      &--type {
+        padding-left: 1rem;
+        &-main {
+          padding-left: 1rem;
+          margin-left: 1rem;
+          background-color: inherit;
+        }
+      }
+    }
+    &__menu {
+        display: block;
+      &-icon {
+        font-size: 2rem;
+        color: $primary-color;
+      }
+    }
+  }
+  .main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &__left{
+        order: 2;
+        width: 100%;
+    }
+    &__right{
+        order: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 4rem;
+        
+        &--title{
+            font-size: 4rem;
+        }
+        &--slogan{
+            width: 33rem;
+            font-size: 1.2rem;
+        }
+    }
+  }
+  .statistics{
+    width: 100%;
+    &__teacher{
+        &--icon{
+            font-size: 5rem;
+        }
+    }
+  }
+  .sample{
+    width: 100%;
+    &__block{
+        width: 100%;
+        row-gap: 2rem;
+        &--image{
+            width: 80%;
+        }
+        &--login{
+            width: 80%;
+        }
+        &--home{
+            width: 80%;
+        }
+        &--course{
+            width: 80%;
+        }
+    }
+  }
+}
+

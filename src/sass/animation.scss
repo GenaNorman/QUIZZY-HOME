@@ -1,0 +1,86 @@
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.number {
+  animation: counter 5s  ease-in-out forwards;
+  counter-reset: num var(--num);
+  font: 800 40px black ops one;
+//   padding: 2rem;
+}
+.number::after {
+  content: counter(num);
+}
+
+@keyframes counter {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 30;
+  }
+}
+
+@property --num {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+.paper {
+    animation: counter 5s  ease-in-out forwards;
+    counter-reset: num var(--num);
+    font: 800 40px black ops one;
+  //   padding: 2rem;
+  }
+  .paper::after {
+    content: counter(num);
+  }
+  
+  @keyframes counter {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: 200;
+    }
+  }
+.courses {
+    animation: counter 5s  ease-in-out forwards;
+    counter-reset: num var(--num);
+    font: 800 40px black ops one;
+  //   padding: 2rem;
+  }
+.courses::after {
+    content: counter(num);
+  }
+  
+  @keyframes counter {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: 100;
+    }
+  }
+
+ .student{
+    animation: counter 5s  ease-in-out forwards;
+    counter-reset: num var(--num);
+    font: 800 40px black ops one;
+  //   padding: 2rem;
+  }
+  .student::after {
+    content: counter(num);
+  }
+  
+  @keyframes counter {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: 100;
+    }
+  }
