@@ -1,3 +1,24 @@
 .style{
     color: #3744F8;
 }
+.title{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.description{
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.stars{
+    color: gold;
+    border-left: 1px solid grey;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    font-size: 1.6rem;
+
+
+}
+.align{
+    display: flex;
+    align-items: center;
+}

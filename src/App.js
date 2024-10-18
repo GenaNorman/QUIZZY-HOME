@@ -1,17 +1,18 @@
-import { useState }         from "react";
-import { CiMenuFries }      from "react-icons/ci";
-import { RxCross1 }         from "react-icons/rx";
-import { SiQiwi }           from "react-icons/si";
-import { PiNewspaperLight } from "react-icons/pi";
-import { SiCoursera }       from "react-icons/si";
-import { HiUserGroup }      from "react-icons/hi";
+import { useState }                from "react";
+import { CiMenuFries }             from "react-icons/ci";
+import { RxCross1 }                from "react-icons/rx";
+import { SiQiwi }                  from "react-icons/si";
+import { PiNewspaperLight }        from "react-icons/pi";
+import { SiCoursera }              from "react-icons/si";
+import { HiUserGroup }             from "react-icons/hi";
+import { IoStarSharp, IoStarHalf } from "react-icons/io5";
 import {
   MdOutlineFileDownload,
   MdOutlineReadMore,
   MdOutlineArrowForward,
 } from "react-icons/md";
 
-import { PiStudentLight }   from "react-icons/pi";
+import { PiStudentLight }          from "react-icons/pi";
 function App() {
   const [active, setActive] = useState(true);
 
@@ -49,16 +50,20 @@ function App() {
       </div>
       <div className="main">
         <div className="main__left">
-        <img
-              src="/images/hero/hero.png"
-              alt="signup"
-              className="main__left--hero"
-            />
+          <img
+            src="/images/hero/hero.png"
+            alt="signup"
+            className="main__left--hero"
+          />
         </div>
         <div className="main__right">
-          <h1 className="main__right--title">Make it happen <br/> with <span className="style">Quizzy</span> </h1>
+          <h1 className="main__right--title">
+            Make it happen <br /> with <span className="style">Quizzy</span>{" "}
+          </h1>
           <p className="main__right--slogan">
-          With tailored courses and practice tools, Quizzy ensures you’re fully  prepared to conquer every challenge and reach your highest  potential with confidence!
+            With tailored courses and practice tools, Quizzy ensures you’re
+            fully prepared to conquer every challenge and reach your highest
+            potential with confidence!
           </p>
           <button className="btn btn-secondary">
             Explore Now <MdOutlineReadMore className="btn-download" />
@@ -146,6 +151,140 @@ function App() {
             Continue
             <MdOutlineArrowForward />
           </button>
+        </div>
+      </div>
+      <div className="card">
+        <div className="heading__block">
+          <h1 className="heading__block--title">
+            Our <span className="style"> Popular</span> Courses
+          </h1>
+          <p className="heading__block--slogan">
+            {" "}
+            Learn, Grow, and Excel with our most
+            <br />
+            popular courses today
+          </p>
+        </div>
+        <div className="card__block">
+          <div className="card__block--container">
+            <img
+              src="/images/courses/hallowee.jpg"
+              alt="signup"
+              className="card__block--container-photo"
+            />
+            <div className="card__block--container-info">
+              <h2 className="title">Database Administration</h2>
+              <p className="description">
+                {" "}
+                Learn to design, manage, and secure databases that power modern
+                applications to maintain data intergrity{" "}
+              </p>
+              <div className="align">
+                <span className="card__block--container-info-amt">
+                  15 Lessons
+                </span>
+                <span className="stars">
+                  <IoStarSharp />
+                  <IoStarSharp />
+                  <IoStarSharp />
+                  <IoStarHalf />
+                </span>
+              </div>
+              <button className="btn btn-primary">
+                Start Learning <MdOutlineArrowForward />
+              </button>
+            </div>
+          </div>
+          <div className="card__block--container">
+            <img
+              src="/images/courses/hallowee.jpg"
+              alt="signup"
+              className="card__block--container-photo"
+            />
+            <div className="card__block--container-info">
+              <h2 className="title">Web developement with React.js</h2>
+              <p className="description">
+                {" "}
+                Build robust solutions, streamline processes, and transform
+                complex requirements into effective systems.{" "}
+              </p>
+              <div className="align">
+                <span className="card__block--container-info-amt">
+                  15 Lessons
+                </span>
+                <span className="stars">
+                  <IoStarSharp />
+                  <IoStarSharp />
+                  <IoStarSharp />
+                  <IoStarSharp />
+                  <IoStarHalf />
+                </span>
+              </div>
+              <button className="btn btn-primary">
+                Start Learning <MdOutlineArrowForward />
+              </button>
+            </div>
+          </div>
+          <div className="card__block--container">
+            <img
+              src="/images/courses/hallowee.jpg"
+              alt="signup"
+              className="card__block--container-photo"
+            />
+            <div className="card__block--container-info">
+              <h2 className="title">Data Analysis with python</h2>
+              <p className="description">
+                {" "}
+                Learn to transform raw data into meaningful insights with
+                powerful libraries like Pandas, NumPy, and Matplotlib.
+              </p>
+              <div className="align">
+                <span className="card__block--container-info-amt">
+                  15 Lessons
+                </span>
+                <span className="stars">
+                  <IoStarSharp />
+                  <IoStarSharp />
+                  <IoStarSharp />
+                  <IoStarSharp />
+                  <IoStarHalf />
+                </span>
+              </div>
+              <button className="btn btn-primary">
+                Start Learning <MdOutlineArrowForward />
+              </button>
+            </div>
+          </div>
+          <div className="card__block--container">
+            <img
+              src="/images/courses/hallowee.jpg"
+              alt="signup"
+              className="card__block--container-photo"
+            />
+            <div className="card__block--container-info">
+              <h2 className="title">System Analysis and Design</h2>
+              <p className="description">
+                {" "}
+                Build robust solutions, streamline processes, and transform
+                complex requirements into effective systems.{" "}
+              </p>
+              <div className="align">
+                <span className="card__block--container-info-amt">
+                  15 Lessons
+                </span>
+                <span className="stars">
+                  <IoStarSharp />
+                  <IoStarSharp />
+                  <IoStarSharp />
+                  <IoStarSharp />
+                  <IoStarHalf />
+                </span>
+              </div>
+              <button className="btn btn-primary">
+                Start Learning <MdOutlineArrowForward />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

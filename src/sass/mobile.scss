@@ -1,6 +1,6 @@
 @media (max-width: 768px) {
   /* Styles for devices with a width of 768px or less */
-  .btn_mobile{
+  .btn_mobile {
     display: none;
   }
   body {
@@ -39,63 +39,78 @@
       }
     }
     &__menu {
-        display: block;
+      display: block;
       &-icon {
         font-size: 2rem;
         color: $primary-color;
       }
     }
   }
-  .main{
+  .main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    &__left{
-        order: 2;
-        width: 100%;
+    &__left {
+      order: 2;
+      width: 100%;
     }
-    &__right{
-        order: 1;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin-left: 4rem;
-        
-        &--title{
-            font-size: 4rem;
-        }
-        &--slogan{
-            width: 33rem;
-            font-size: 1.2rem;
-        }
-    }
-  }
-  .statistics{
-    width: 100%;
-    &__teacher{
-        &--icon{
-            font-size: 5rem;
-        }
+    &__right {
+      order: 1;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      margin-left: 2rem;
+
+      &--title {
+        font-size: 4rem;
+      }
+      &--slogan {
+        width: 31rem;
+        font-size: 1.2rem;
+        margin-left: 2rem;
+      }
     }
   }
-  .sample{
+  .statistics {
     width: 100%;
-    &__block{
-        width: 100%;
-        row-gap: 2rem;
-        &--image{
-            width: 80%;
-        }
-        &--login{
-            width: 80%;
-        }
-        &--home{
-            width: 80%;
-        }
-        &--course{
-            width: 80%;
-        }
+    &__teacher {
+      &--icon {
+        font-size: 5rem;
+      }
     }
+  }
+  .sample {
+    width: 100%;
+    &__block {
+      width: 100%;
+      row-gap: 2rem;
+      &--image {
+        width: 80%;
+      }
+      &--login {
+        width: 80%;
+      }
+      &--home {
+        width: 80%;
+      }
+      &--course {
+        width: 80%;
+      }
+    }
+  }
+
+  .card {
+    &__block {
+      row-gap: 4rem;
+      margin-top: 5rem;
+      &--container {
+        width: 100%;
+      }
+    }
+  }
+  //   #####################################COMPONENTS
+
+  .heading__block--title {
+    font-size: 3rem;
   }
 }
-
