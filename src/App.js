@@ -5,6 +5,7 @@ import { SiQiwi }                  from "react-icons/si";
 import { PiNewspaperLight }        from "react-icons/pi";
 import { SiCoursera }              from "react-icons/si";
 import { HiUserGroup }             from "react-icons/hi";
+import { FaApple }                 from "react-icons/fa";
 import { IoStarSharp, IoStarHalf } from "react-icons/io5";
 import {
   MdOutlineFileDownload,
@@ -113,7 +114,7 @@ function App() {
           </div>
         </div>
         <div className="sample__block">
-          <div className="sample__block--image">
+          <div className="sample__block--image all">
             <img
               src="/images/screenshoots/signup.jpg"
               alt="signup"
@@ -121,7 +122,7 @@ function App() {
             />
             <p className="sample__block--image-name">SignUp</p>
           </div>
-          <div className="sample__block--login">
+          <div className="sample__block--login all">
             <img
               src="/images/screenshoots/login.jpg"
               alt="signup"
@@ -129,7 +130,7 @@ function App() {
             />
             <p className="sample__block--image-name">SignUp</p>
           </div>
-          <div className="sample__block--home">
+          <div className="sample__block--home all">
             <img
               src="/images/screenshoots/home.jpg"
               alt="signup"
@@ -137,7 +138,7 @@ function App() {
             />
             <p className="sample__block--image-name">SignUp</p>
           </div>
-          <div className="sample__block--course">
+          <div className="sample__block--course all">
             <img
               src="/images/screenshoots/course.jpg"
               alt="signup"
@@ -168,7 +169,7 @@ function App() {
         <div className="card__block">
           <div className="card__block--container">
             <img
-              src="/images/courses/hallowee.jpg"
+              src="/images/courses/database.jpg"
               alt="signup"
               className="card__block--container-photo"
             />
@@ -227,7 +228,7 @@ function App() {
           </div>
           <div className="card__block--container">
             <img
-              src="/images/courses/hallowee.jpg"
+              src="/images/courses/big.jpg"
               alt="signup"
               className="card__block--container-photo"
             />
@@ -257,7 +258,7 @@ function App() {
           </div>
           <div className="card__block--container">
             <img
-              src="/images/courses/hallowee.jpg"
+              src="/images/courses/analysis.jpg"
               alt="signup"
               className="card__block--container-photo"
             />
@@ -287,6 +288,89 @@ function App() {
           </div>
         </div>
       </div>
+      <div className="download">
+        <div className="download__left">
+          <img
+            src="/images/screenshoots/home.jpg"
+            alt="signup"
+            className="download__left--photo"
+          />
+        </div>
+        <div className="download__right">
+          <h2 className=" u-center big-h">
+            The <span className="style">Quizzy </span> App is available for free
+            on <br />
+            Google Play and App Store
+          </h2>
+          <p calssName="description"></p>
+          <div className="download__right--install align">
+            <div className="download__right--install-apple align">
+              <FaApple className="apple" />
+              <div className="align">
+                <div className="l-height">
+                  <p>Download on the </p>
+                  <h2>App store</h2>
+                </div>
+              </div>
+            </div>
+            <div className="download__right--install-play align">
+              <img
+                src="/images/abstrract/picon.png"
+                alt="signup"
+                className="store"
+              />
+              <div className="align">
+                <div className="l-height">
+                  <p>Download on the </p>
+                  <h2>App store</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="about">
+        <div className="heading__block">
+          <h1 className="heading__block--title">
+            About<span className="style">Us</span>
+          </h1>
+          <p className="heading__block--slogan">
+            We’re Here to Listen, Support, and Guide You.
+            <br /> Don’t hesitate—contact us today
+          </p>
+        </div>
+      </div>
+      <div className="heading__block">
+        <h1 className="heading__block--title">
+          Get In<span className="style">Touch</span>
+        </h1>
+        <p className="heading__block--slogan">
+          We’re Here to Listen, Support, and Guide You.
+          <br /> Don’t hesitate—contact us today
+        </p>
+      </div>
+      <div className="contact">
+        <div className="contact__block">
+        <div className="contact__left">
+          <div className="contact__left--image">
+            <img
+              src="/images/contact/contact.png"
+              alt="signup"
+              className="contact__left--image-photo"
+            />
+          </div>
+        </div>
+        <div className="contact__right">
+          <div className="contact__right--form">
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+            <input type="email" placeholder="Email" required/>
+            {/* <textarea>write something</textarea> */}
+          </div>
+        </div>
+        </div>
+      </div>
+      <br/>
     </div>
   );
 }
